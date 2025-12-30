@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>MorseLink Official Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <h1>MorseLink</h1>
-  <p>モールス信号学習アプリ MorseLink の公式サイトです。</p>
-  <ul>
-    <li><a href="privacy.html">プライバシーポリシー</a></li>
-    <li><a href="terms.html">利用規約</a></li>
-  </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MorseLink サポート</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+        background: #f3f6fb;
+        color: #1f2c3d;
+      }
+      header {
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        margin: 0 0 0.25rem;
+      }
+      p {
+        margin: 0.25rem 0 0;
+        color: #475569;
+      }
+      section {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.2rem;
+      }
+      a {
+        color: #0f7dcf;
+      }
+      .links {
+        display: grid;
+        gap: 0.75rem;
+      }
+      .links a {
+        display: block;
+        padding: 0.75rem 0.9rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #0f172a;
+        background: #ffffff;
+      }
+      .links a:hover {
+        border-color: #93c5fd;
+        background: #f8fafc;
+      }
+      .links small {
+        display: block;
+        color: #64748b;
+      }
+      footer {
+        font-size: 0.9rem;
+        color: #475569;
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MorseLink サポート</h1>
+      <p>プライバシー、利用規約、アカウント削除に関する情報を掲載しています。</p>
+    </header>
+
+    <section class="links" aria-label="Support links">
+      <a href="./privacy.html">
+        プライバシーポリシー
+        <small>ユーザーデータの取り扱いについて</small>
+      </a>
+      <a href="./terms.html">
+        利用規約
+        <small>サービス利用に関する規約</small>
+      </a>
+      <a href="./support/account-deletion.html">
+        アカウント削除
+        <small>アプリ内削除 / アプリにアクセスできない場合の削除依頼</small>
+      </a>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <ul>
+        <li>
+          <a href="mailto:support@morse-link.com">support@morse-link.com</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> MorseLink. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
