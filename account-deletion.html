@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>アカウント削除の手順 | MorseLink</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+        background: #f3f6fb;
+        color: #1f2c3d;
+      }
+      nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 0 0 1.5rem;
+      }
+      nav a {
+        font-size: 0.95rem;
+        color: #0f7dcf;
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      header {
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.2rem;
+      }
+      section {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      ol {
+        padding-left: 1.2rem;
+      }
+      footer {
+        font-size: 0.9rem;
+        color: #475569;
+      }
+      a {
+        color: #0f7dcf;
+      }
+    </style>
+  </head>
+  <body>
+    <nav aria-label="MorseLink site navigation">
+      <a href="../index.html">トップ</a>
+      <a href="../privacy.html">プライバシーポリシー</a>
+      <a href="../terms.html">利用規約</a>
+      <a href="./account-deletion.html" aria-current="page">アカウント削除</a>
+    </nav>
+
+    <header>
+      <h1>MorseLink アカウント削除のご依頼方法</h1>
+      <p>
+        このページでは、モールス信号学習アプリ「MorseLink」のアカウントと関連データの削除をご希望のユーザー向けに、手続き方法を案内します。
+      </p>
+    </header>
+
+    <section>
+      <h2>削除対象となるデータ</h2>
+      <p>アカウント削除により、以下のデータが削除されます。</p>
+      <ul>
+        <li>Firebase Authentication に保存されているアカウント情報（メールアドレス、表示名など）</li>
+        <li>学習履歴（ドリル結果、クエスト進捗、エナジー状態など）</li>
+        <li>チャットの投稿内容、AI コーチへの投稿内容（可能な範囲で削除）</li>
+        <li>保存済みの通知トークンおよび購読情報</li>
+      </ul>
+      <p>法令で定められた期間の保管が必要なデータについては、必要最小限の範囲でのみ保持します。</p>
+    </section>
+
+    <section>
+      <h2>アプリから削除（推奨）</h2>
+      <ol>
+        <li>MorseLink アプリにログインします。</li>
+        <li>「設定 &gt; アカウント設定 &gt; アカウント削除」を開きます。</li>
+        <li>画面の案内に従って削除を実行します（削除後は復元できません）。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>アプリにアクセスできない場合（メールで削除依頼）</h2>
+      <p>
+        端末変更などでアプリにアクセスできない場合は、下記のメールアドレス宛に削除をご依頼ください。
+      </p>
+      <ol>
+        <li>
+          件名を「MorseLink アカウント削除希望」とし、本文に以下をご記載ください。
+          <ul>
+            <li>登録メールアドレス</li>
+            <li>ご本人確認のための情報（例: 表示名、最近完了した学習モードなど）</li>
+          </ul>
+        </li>
+        <li>当社サポートで本人確認後、アカウント削除を実施します。</li>
+      </ol>
+      <p>お問い合わせ先: <a href="mailto:support@morse-link.com">support@morse-link.com</a></p>
+    </section>
+
+    <section>
+      <h2>注意事項</h2>
+      <ul>
+        <li>一度削除したアカウントとデータは復元できません。</li>
+        <li>定期購入をご利用中の場合は、各ストア（App Store / Google Play）で解約手続きを行ってください。</li>
+        <li>購入/課金の返金は行っていません（購入履歴はストア側に残ります）。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>関連リンク</h2>
+      <ul>
+        <li><a href="../privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../terms.html">利用規約</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> MorseLink. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
