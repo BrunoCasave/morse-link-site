@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>利用規約 | MorseLink</title>
+    <title>Terms of Service | MorseLink</title>
+    <link rel="stylesheet" href="./assets/site.css" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -43,6 +44,9 @@
         border-radius: 12px;
         padding: 1.5rem;
         box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      article + article {
+        margin-top: 1rem;
       }
       article h2,
       article h3 {
@@ -90,19 +94,41 @@
   <body>
     <div class="container">
       <nav aria-label="MorseLink site navigation">
-        <a href="./index.html">トップ</a>
-        <a href="./privacy.html">プライバシーポリシー</a>
-        <a href="./terms.html" aria-current="page">利用規約</a>
-        <a href="./support/account-deletion.html">アカウント削除</a>
+        <a href="./index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="ja">トップ</span>
+        </a>
+        <a href="./privacy.html">
+          <span data-lang="en">Privacy</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+        </a>
+        <a href="./terms.html" aria-current="page">
+          <span data-lang="en">Terms</span>
+          <span data-lang="ja">利用規約</span>
+        </a>
+        <a href="./support/account-deletion.html">
+          <span data-lang="en">Account deletion</span>
+          <span data-lang="ja">アカウント削除</span>
+        </a>
       </nav>
 
       <header>
-        <h1>利用規約</h1>
+        <h1 data-lang="en">Terms of Service</h1>
+        <h1 data-lang="ja">利用規約</h1>
       </header>
 
-      <article>
+      <article data-lang="en">
+        <p><strong>Last updated:</strong> Nov 9, 2025</p>
         <p>
-        <strong>最終更新日:</strong> 2025年11月9日
+          This page is provided in English for convenience. The official Terms of Service are
+          available in Japanese.
+        </p>
+        <p><a href="#jp" data-set-lang="ja">View the Japanese terms</a></p>
+      </article>
+
+      <article id="jp" data-lang="ja">
+        <p>
+          <strong>最終更新日:</strong> 2025年11月9日
         </p>
         <p>
         本利用規約（以下「本規約」といいます）は、株式会社どっとぬる（以下「当社」といいます）が提供するモールス信号学習アプリケーション「MorseLink」（以下「本アプリ」といいます）の利用に関する条件を定めるものです。本アプリをご利用になる前に、本規約をよくお読みください。本アプリを利用することで、お客様は本規約に同意したものとみなされます。
@@ -319,5 +345,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="./assets/site.js"></script>
   </body>
 </html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MorseLink サポート</title>
+    <title>MorseLink Support</title>
+    <link rel="stylesheet" href="./assets/site.css" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -68,27 +69,36 @@
   </head>
   <body>
     <header>
-      <h1>MorseLink サポート</h1>
-      <p>プライバシー、利用規約、アカウント削除に関する情報を掲載しています。</p>
+      <h1 data-lang="en">MorseLink Support</h1>
+      <h1 data-lang="ja">MorseLink サポート</h1>
+      <p data-lang="en">Privacy policy, terms, and account deletion information.</p>
+      <p data-lang="ja">プライバシー、利用規約、アカウント削除に関する情報を掲載しています。</p>
     </header>
 
     <section class="links" aria-label="Support links">
       <a href="./privacy.html">
-        プライバシーポリシー
-        <small>ユーザーデータの取り扱いについて</small>
+        <span data-lang="en">Privacy Policy</span>
+        <span data-lang="ja">プライバシーポリシー</span>
+        <small data-lang="en">How we handle user data</small>
+        <small data-lang="ja">ユーザーデータの取り扱いについて</small>
       </a>
       <a href="./terms.html">
-        利用規約
-        <small>サービス利用に関する規約</small>
+        <span data-lang="en">Terms of Service</span>
+        <span data-lang="ja">利用規約</span>
+        <small data-lang="en">Rules for using the service</small>
+        <small data-lang="ja">サービス利用に関する規約</small>
       </a>
       <a href="./support/account-deletion.html">
-        アカウント削除
-        <small>アプリ内削除 / アプリにアクセスできない場合の削除依頼</small>
+        <span data-lang="en">Account deletion</span>
+        <span data-lang="ja">アカウント削除</span>
+        <small data-lang="en">Delete in-app / request deletion by email</small>
+        <small data-lang="ja">アプリ内削除 / アプリにアクセスできない場合の削除依頼</small>
       </a>
     </section>
 
     <section>
-      <h2>お問い合わせ</h2>
+      <h2 data-lang="en">Contact</h2>
+      <h2 data-lang="ja">お問い合わせ</h2>
       <ul>
         <li>
           <a href="mailto:support@morse-link.com">support@morse-link.com</a>
@@ -103,5 +113,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="./assets/site.js"></script>
   </body>
 </html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>プライバシーポリシー | MorseLink</title>
+    <title>Privacy Policy | MorseLink</title>
+    <link rel="stylesheet" href="./assets/site.css" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -43,6 +44,9 @@
         border-radius: 12px;
         padding: 1.5rem;
         box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+      article + article {
+        margin-top: 1rem;
       }
       article h2,
       article h3 {
@@ -90,17 +94,39 @@
   <body>
     <div class="container">
       <nav aria-label="MorseLink site navigation">
-        <a href="./index.html">トップ</a>
-        <a href="./privacy.html" aria-current="page">プライバシーポリシー</a>
-        <a href="./terms.html">利用規約</a>
-        <a href="./support/account-deletion.html">アカウント削除</a>
+        <a href="./index.html">
+          <span data-lang="en">Home</span>
+          <span data-lang="ja">トップ</span>
+        </a>
+        <a href="./privacy.html" aria-current="page">
+          <span data-lang="en">Privacy Policy</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+        </a>
+        <a href="./terms.html">
+          <span data-lang="en">Terms</span>
+          <span data-lang="ja">利用規約</span>
+        </a>
+        <a href="./support/account-deletion.html">
+          <span data-lang="en">Account deletion</span>
+          <span data-lang="ja">アカウント削除</span>
+        </a>
       </nav>
 
       <header>
-        <h1>プライバシーポリシー</h1>
+        <h1 data-lang="en">Privacy Policy</h1>
+        <h1 data-lang="ja">プライバシーポリシー</h1>
       </header>
 
-      <article>
+      <article data-lang="en">
+        <p><strong>Last updated:</strong> Nov 9, 2025</p>
+        <p>
+          This page is provided in English for convenience. The official Privacy Policy is
+          available in Japanese.
+        </p>
+        <p><a href="#jp" data-set-lang="ja">View the Japanese policy</a></p>
+      </article>
+
+      <article id="jp" data-lang="ja">
         <p>
           <strong>最終更新日:</strong> 2025年11月9日
         </p>
@@ -291,5 +317,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="./assets/site.js"></script>
   </body>
 </html>

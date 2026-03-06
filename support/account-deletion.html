@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>アカウント削除の手順 | MorseLink</title>
+    <title>Account deletion | MorseLink</title>
+    <link rel="stylesheet" href="../assets/site.css" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -55,20 +56,48 @@
   </head>
   <body>
     <nav aria-label="MorseLink site navigation">
-      <a href="../index.html">トップ</a>
-      <a href="../privacy.html">プライバシーポリシー</a>
-      <a href="../terms.html">利用規約</a>
-      <a href="./account-deletion.html" aria-current="page">アカウント削除</a>
+      <a href="../index.html">
+        <span data-lang="en">Home</span>
+        <span data-lang="ja">トップ</span>
+      </a>
+      <a href="../privacy.html">
+        <span data-lang="en">Privacy</span>
+        <span data-lang="ja">プライバシーポリシー</span>
+      </a>
+      <a href="../terms.html">
+        <span data-lang="en">Terms</span>
+        <span data-lang="ja">利用規約</span>
+      </a>
+      <a href="./account-deletion.html" aria-current="page">
+        <span data-lang="en">Account deletion</span>
+        <span data-lang="ja">アカウント削除</span>
+      </a>
     </nav>
 
     <header>
-      <h1>MorseLink アカウント削除のご依頼方法</h1>
-      <p>
+      <h1 data-lang="en">MorseLink account deletion</h1>
+      <h1 data-lang="ja">MorseLink アカウント削除のご依頼方法</h1>
+      <p data-lang="en">
+        This page explains how to delete your MorseLink account and related data.
+      </p>
+      <p data-lang="ja">
         このページでは、モールス信号学習アプリ「MorseLink」のアカウントと関連データの削除をご希望のユーザー向けに、手続き方法を案内します。
       </p>
     </header>
 
-    <section>
+    <section data-lang="en">
+      <h2>Data that will be deleted</h2>
+      <p>Deleting your account removes the following data:</p>
+      <ul>
+        <li>Account data stored in Firebase Authentication (email address, display name, etc.)</li>
+        <li>Learning history (drill results, quest progress, energy state, etc.)</li>
+        <li>Chat posts and AI coach messages (deleted where possible)</li>
+        <li>Saved notification tokens and subscription metadata</li>
+      </ul>
+      <p>We retain only the minimum data required by law, if any.</p>
+    </section>
+
+    <section data-lang="ja">
       <h2>削除対象となるデータ</h2>
       <p>アカウント削除により、以下のデータが削除されます。</p>
       <ul>
@@ -80,7 +109,16 @@
       <p>法令で定められた期間の保管が必要なデータについては、必要最小限の範囲でのみ保持します。</p>
     </section>
 
-    <section>
+    <section data-lang="en">
+      <h2>Delete from the app (recommended)</h2>
+      <ol>
+        <li>Log in to the MorseLink app.</li>
+        <li>Open <strong>Settings &gt; Account settings &gt; Delete account</strong>.</li>
+        <li>Follow the on-screen instructions (this action cannot be undone).</li>
+      </ol>
+    </section>
+
+    <section data-lang="ja">
       <h2>アプリから削除（推奨）</h2>
       <ol>
         <li>MorseLink アプリにログインします。</li>
@@ -89,7 +127,23 @@
       </ol>
     </section>
 
-    <section>
+    <section data-lang="en">
+      <h2>If you can’t access the app (request deletion by email)</h2>
+      <p>If you cannot access the app (e.g., after switching devices), email us at:</p>
+      <p><a href="mailto:support@morse-link.com">support@morse-link.com</a></p>
+      <ol>
+        <li>
+          Use the subject: <strong>MorseLink account deletion request</strong>, and include:
+          <ul>
+            <li>Your registered email address</li>
+            <li>Information for verification (e.g., your display name or recently completed mode)</li>
+          </ul>
+        </li>
+        <li>After verification, we will delete your account.</li>
+      </ol>
+    </section>
+
+    <section data-lang="ja">
       <h2>アプリにアクセスできない場合（メールで削除依頼）</h2>
       <p>
         端末変更などでアプリにアクセスできない場合は、下記のメールアドレス宛に削除をご依頼ください。
@@ -107,7 +161,16 @@
       <p>お問い合わせ先: <a href="mailto:support@morse-link.com">support@morse-link.com</a></p>
     </section>
 
-    <section>
+    <section data-lang="en">
+      <h2>Notes</h2>
+      <ul>
+        <li>Deleted accounts and data cannot be restored.</li>
+        <li>If you have an active subscription, cancel it in the App Store / Google Play.</li>
+        <li>We do not offer refunds (purchase history remains in the store).</li>
+      </ul>
+    </section>
+
+    <section data-lang="ja">
       <h2>注意事項</h2>
       <ul>
         <li>一度削除したアカウントとデータは復元できません。</li>
@@ -116,7 +179,15 @@
       </ul>
     </section>
 
-    <section>
+    <section data-lang="en">
+      <h2>Related links</h2>
+      <ul>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms of Service</a></li>
+      </ul>
+    </section>
+
+    <section data-lang="ja">
       <h2>関連リンク</h2>
       <ul>
         <li><a href="../privacy.html">プライバシーポリシー</a></li>
@@ -131,5 +202,6 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+    <script src="../assets/site.js"></script>
   </body>
 </html>
