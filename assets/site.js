@@ -1,16 +1,16 @@
 (() => {
   const supported = [
+    "de",
     "en",
-    "ja",
     "es",
     "es-419",
-    "pt-BR",
-    "de",
     "fr",
+    "ja",
     "ko",
+    "pt-BR",
+    "ru",
     "zh-Hans",
     "zh-Hant",
-    "ru",
   ];
 
   const labels = {
