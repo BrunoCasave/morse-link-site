@@ -574,6 +574,81 @@ svg {
   color: var(--muted);
   font-size: 0.875rem;
 }
+.plans-section {
+  padding: 72px 0 80px;
+  background: var(--white);
+}
+.plans-heading {
+  margin-bottom: 32px;
+}
+.plans-heading h2 {
+  font-size: clamp(1.875rem, 3.8vw, 2.75rem);
+  line-height: 1.35;
+  font-weight: 650;
+  letter-spacing: -0.045em;
+}
+.plan-table {
+  table-layout: fixed;
+  border-top: 1px solid var(--ink);
+  font-size: 1rem;
+}
+.plan-table th,
+.plan-table td {
+  padding: 22px 28px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+.plan-table tr > :first-child {
+  width: 44%;
+  padding-left: 0;
+}
+.plan-table thead th {
+  padding-block: 26px;
+  font-size: 1.125rem;
+  font-weight: 650;
+}
+.plan-table thead th:first-child {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.plan-table tbody th {
+  font-weight: 500;
+}
+.plan-table tr {
+  border-color: var(--line);
+  transition: none;
+}
+.plan-table tr:hover {
+  background: transparent;
+}
+.plan-table tr > :last-child {
+  background: #eaf4f6;
+  color: var(--accent-ink);
+}
+.plan-table tbody td:last-child {
+  font-weight: 600;
+}
+.plan-detail {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.plan-number {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.plans-note {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
 .download-section {
   background: #11263b;
   color: white;
@@ -885,6 +960,30 @@ svg {
     min-height: 56px;
     padding: 12px 8px;
   }
+  .plans-section {
+    padding: 44px 0 48px;
+  }
+  .plans-heading {
+    margin-bottom: 24px;
+  }
+  .plan-table th,
+  .plan-table td {
+    padding: 18px 10px;
+  }
+  .plan-table tr > :first-child {
+    width: 38%;
+    padding-right: 16px;
+  }
+  .plan-table thead th {
+    padding-block: 22px;
+    font-size: 1rem;
+  }
+  .plan-table thead th:last-child {
+    width: 33%;
+  }
+  .plans-note {
+    margin-top: 18px;
+  }
   .screen-panel {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -975,3 +1074,9 @@ svg {
 
 .screen-tab { display:inline-flex; align-items:center; justify-content:center; }
 .screen-panel { font-size:.875rem; outline:none; }
+
+/* Native equivalents of the approved table primitive. */
+.plans-section .table-container { position:relative; width:100%; overflow-x:auto; }
+.plan-table { width:100%; }
+.plan-table tr { border-bottom:1px solid var(--line); }
+.plan-table tbody tr:last-child { border-bottom:0; }
